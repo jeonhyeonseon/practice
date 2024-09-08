@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: jpa_practice
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost/jpa
+    username: sh
+    password: sh
+  jpa:
+    show-sql: true
+    generate-ddl: false
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: none
+        format_sql: true
+
+server:
+  port: 8080
